@@ -1,0 +1,31 @@
+[
+    {
+        "name": "Saint Martiale",
+        "image": "images/male_martial_sage.png"
+    },
+    {
+        "name": "Combatant Divin",
+        "image": "images/male_warbringer.png"
+    },
+    {
+        "name": "Chasseur Sacré",
+        "image": "images/male_sacred_hunter.png"
+    },
+    {
+        "name": "Empereur de Plumes",
+        "image": "images/male_plume_monarch.png",
+        "skills": {
+            "S": [
+                "", ""
+            ]
+        }
+    },
+    {
+        "name": "Prophète",
+        "image": "images/male_prophet.png"
+    },
+    {
+        "name": "Roi démon",
+        "image": "images/male_darklord.png"
+    }
+]

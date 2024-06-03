@@ -1,0 +1,118 @@
+html body {
+    background-color: #1c1c21;
+}
+
+#GameDiv {
+    max-height: 100vh;
+}
+
+/* Navigation */
+
+nav {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    button {
+        cursor: pointer;
+        width: 80px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 50%;
+        border: 3px solid #f0f0f0;
+        &.active {
+            border-color: #34c924;
+        }
+    }
+}
+
+#lucas_detling {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+#contentExtension {
+    max-width: 80%;
+    margin: auto;
+}
+
+#contentPersos {
+    margin: 3rem 0;
+
+    * {
+        color: white;
+    }
+
+    h2 {
+        text-align: left;
+    }
+    .persos {
+        display: none;
+        &.perso-active {
+            display: block;
+        }
+        .stats {
+            margin: 3rem 0;
+        }
+        .contentTierList {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem;
+            > div {
+                width: 500px;
+            }
+        }
+    }
+}
+
+.content-tierList {
+    display: flex;
+    align-items: center;
+    &:first-child .note {
+        border-top-left-radius: 5px;
+    }
+    &:last-child .note {
+        border-bottom-left-radius: 5px;
+    }
+
+    .note {
+        width: 30px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        color: white;
+
+        &.note-S {
+            background-color: #f55454;
+        }
+        &.note-A {
+            background-color: #fd9757;
+        }
+        &.note-B {
+            background-color: #ffd48c;
+        }
+        &.note-C {
+            background-color: #ecdf5e;
+        }
+        &.note-D {
+            background-color: #8ce073;
+        }
+        &.note-E {
+            background-color: #57d7dc;
+        }
+        &.note-F {
+            background-color: #af65f4;
+        }
+    }
+    .content-img-tierList {
+        display: flex;
+        img {
+            height: 50px;
+        }
+    }
+}
