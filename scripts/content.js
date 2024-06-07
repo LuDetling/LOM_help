@@ -28,6 +28,8 @@ if (GameDiv) {
 
       if (i == 0 && !localStorage.getItem("mushrooms")) {
         perso.classList.add("active");
+      } else if (localStorage.getItem("mushrooms") == i) {
+        perso.classList.add("active");
       }
 
       nav.appendChild(perso);
@@ -36,6 +38,7 @@ if (GameDiv) {
       perso.style.backgroundImage =
         "url(" + chrome.runtime.getURL(persos[i].image) + ")";
       perso.addEventListener("click", function () {
+        localStorage.setItem("mushrooms", i);
         if (document.querySelector(".active")) {
           document.querySelector(".active").classList.remove("active");
           document
@@ -50,6 +53,8 @@ if (GameDiv) {
       contentPersoDiv.setAttribute("class", "persos perso-" + i);
       contentPersosDiv.appendChild(contentPersoDiv);
       if (i == 0 && !localStorage.getItem("mushrooms")) {
+        contentPersoDiv.classList.add("perso-active");
+      } else if (localStorage.getItem("mushrooms") == i) {
         contentPersoDiv.classList.add("perso-active");
       }
       createDescriptionPerso(i, contentPersoDiv);

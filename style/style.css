@@ -1,9 +1,12 @@
 html body {
   background-color: #1c1c21;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #GameDiv {
   max-height: 100vh;
+  min-width: 512px;
 }
 
 /* Navigation */
@@ -28,12 +31,11 @@ nav button.active {
 
 #lucas_detling {
   position: absolute;
-  left: 1rem;
+  right: 1rem;
   top: 1rem;
 }
 
 #contentExtension {
-  max-width: 80%;
   margin: auto;
 }
 

@@ -3,6 +3,9 @@
     "name": "LOM_Help",
     "description": "Base Level Extension",
     "version": "1.1",
+    "icons": {
+        "128": "images/icone.png"
+    },
     "web_accessible_resources": [
         {
             "resources": [
